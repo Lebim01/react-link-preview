@@ -64,6 +64,7 @@ function LinkPreview(props) {
         setLoading(true);
         return Promise.resolve(fetch(api, {
           method: 'POST',
+          mode: 'no-cors',
           headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json'
